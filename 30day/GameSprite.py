@@ -77,10 +77,10 @@ class HeroSprite(GameSprite): #英雄精灵
 		self.rect.x += self.speed
 		self.rect.y += self.speed1  
 			
-		if self.rect.left <= 0:
+		if self.rect.left < 0:
 			self.rect.left = 0
 
-		if self.rect.right >= SCREEN_RECT.width:
+		if self.rect.right > SCREEN_RECT.width:
 			self.rect.right = SCREEN_RECT.width
 		elif self.rect.top < 0:
 			self.rect.top = 0
